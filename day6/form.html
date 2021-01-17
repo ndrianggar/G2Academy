@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>Latihan Dengan Objek Text</title>
+</head>
+
+<body>
+
+    <!-- <form name="fform">
+        <H1> Memasukkan Data Dengan Objek Teks</H1>
+
+        Nama Anda : <input type="text" size="11" name="nama"><br>
+        Alamat : <input type="text" size="25" name="alamat">
+        <BR>
+        <input type="button" value="kirim" onclick="tekan()">
+        <input type="reset" value="ulang">
+        <H3>Output</H3>
+        <PRE>
+            Jadi Nama Anda adalah :<input type="text" size="11" name="onama"><br>
+            Alamat Anda di        :<input type="text" size="25" name="oalamat">
+        </form> -->
+
+
+
+    <fieldset style="width: 300px;">
+        <legend>Input Form dengan selain form</legend>
+        <label for="fname">Nama: <input type="text" id="nama"></label><br>
+        <label for="fname">Alamat: <input type="text" id="alamat"></label><br>
+        <label for="fname">Umur: <input type="text" id="umur"></label><br>
+        <br>
+        <br>
+
+
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>Umur</th>
+            </tr>
+            <tr>
+                <td id="vnama"></td>
+                <td id="valamat"></td>
+                <td id="vumur"></td>
+            </tr>
+
+        </table><br>
+
+        <button id="put">Input</button>
+    </fieldset>
+
+
+
+    <script>
+
+        //form inputan dengan selain form
+        document.getElementById("put").onclick = function () {
+            var nama = document.getElementById("nama").value;
+            document.getElementById("vnama").innerHTML = nama;
+
+            var alamat = document.getElementById("alamat").value;
+            document.getElementById("valamat").innerHTML = alamat;
+
+            var umur = document.getElementById("umur").value;
+            document.getElementById("vumur").innerHTML = 2020 - umur;
+        }
+
+
+    </script>
+
+
+    <!-- 
+<script type="text/javascript">
+    //Form input menggunaka form
+    function tekan() {
+        var namastr = (document.fform.nama.value);
+        var alamatstr = (document.fform.alamat.value);
+        document.fform.onama.value = namastr;
+        document.fform.oalamat.value = alamatstr;
+    }
+
+</script> -->
+</body>
+
+</html>

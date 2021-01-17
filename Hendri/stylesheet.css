@@ -1,0 +1,197 @@
+body {
+    font-family: "Avenir Next";
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .header {
+    background-color: #26d0c9;
+    color: #fff;
+    height: 90px;
+  }
+  
+  .header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+  }
+  
+  .header-list li {
+    float: left;
+    padding: 33px 20px;
+  }
+
+  .header-list li a{
+    text-decoration: none;
+   color: white;
+  }
+  
+  .main {
+    padding: 100px 80px;
+  }
+
+  .copy-container{
+    padding-left: 300px;
+  }
+  
+  .copy-container h1 {
+    font-size: 140px;
+  }
+  
+  .copy-container h2 {
+    font-size: 60px;
+  }
+  
+  .copy-container span {
+    color: #ff4a4a;
+  }
+  
+  .contents {
+    height: 500px;
+    margin-top: 100px;
+  }
+
+  .collapse{
+    background-color: #d4f3ef;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 45%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+  }
+
+  .active, .collapse:hover{
+    background-color: tomato;
+  }
+.center{
+text-align: center;
+}
+.justify {
+  text-align: justify;
+}
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+  .collapse::after{
+   content: '\002b';
+   color: brown;
+   float: right;
+   margin-left: 5px;
+  }
+
+  .active::after{
+    content: "\2212";
+  }
+
+  .baristombol{
+   margin-left: 350px;
+   margin-top: 50px;
+
+  }
+
+  .w3-red, .w3-hover-red:hover {
+    color: #fff!important;
+    background-color: #f44336!important;
+  }
+
+  .w3-btn, .w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .isi{
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+
+    
+  }
+
+  .inputan{
+    width: 40px;
+  }
+
+  .samadengan{
+    width: 50px;
+    background-color: steelblue;
+    color: white;
+  }
+
+  
+  .section-title {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+  }
+  
+  .contents-item {
+    float: left;
+    margin-right: 40px;
+  }
+  
+  .contents-item p {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  
+  .contact-form {
+    padding-top: 100px;
+  }
+  
+  /* Tambahkan CSS untuk tags <input> dan <textarea> */
+  textarea, input{
+    width:400px;
+    margin-top:10px;
+    margin-bottom:30px;
+    padding:20px;
+    font-size:18px;
+    border : 1px solid #dee7ec;
+    
+  }
+  
+  /* Tambahkan CSS untuk contact-submit */
+  .contact-submit{
+    background-color:#dee7ec;
+    color:#889eab;
+  }
+  
+  .footer {
+    background-color: #2f5167;
+    color: #fff;
+    height: 120px;
+    padding: 40px;
+  }
+  
+  .footer-logo {
+    float: left;
+    font-size: 32px;
+  }
+  
+  .footer-list {
+    float: right;
+  }
+  
+  .footer-list li {
+    padding-bottom: 20px;
+  }
+  

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Progate</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">Progate</div>
+        <div class="header-list">
+            <ul>
+                <li>Tentang</li>
+                <li>Pelajaran</li>
+                <li><a href="Portofolio.html">Portofolio</a></li>
+                <li>Hubungi Kami</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="copy-container">
+            <h1>Project<span>.</span></h1>
+            <h2>Yang sudah ditangani</h2>
+        </div>
+
+        <div class="contents">
+            <div class="cJadul">
+                <button class="collapse">Calculator Jadul</button>
+                <div class="isi">
+                    <input class="inputan" type="text" id="colomSatu">
+                    <select id="op">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="x">x</option>
+                        <option value="/">/</option>
+                    </select>
+                    <input class="inputan" type="text" id="colomDua">
+                    <input class="samadengan" type="submit" onclick="kalkulator()" value="=">
+                    <input class="inputan" type="text" id="hasil">
+                </div>
+            </div><br>
+            <div class="cModern">
+                <button class="collapse">Calculator Modern</button>
+            </div>
+
+        </div>
+
+        <div class="contact-form">
+            <h3 class="section-title">Hubungi kami</h3>
+            <p>Email (Wajib Diisi)</p>
+            <!-- Tambahkan tag <input> -->
+            <input>
+
+            <p>Pesan (Wajib Diisi)</p>
+            <!-- Tambahkan tag <textarea> -->
+            <textarea></textarea>
+
+            <p>*Bidang Wajib Diisi</p>
+            <!-- Tambahkan tag <input> -->
+            <input class="contact-submit" type="submit" value="Kirim" />
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">Progate</div>
+        <div class="footer-list">
+            <ul>
+                <li>Tentang</li>
+                <li>Karier</li>
+                <li>Hubungi Kami</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    function kalkulator() {
+        //variable angka satu
+        var angkaSatu = parseInt(document.getElementById("colomSatu").value);
+        //variable angka dua
+        var angkaDua = parseInt(document.getElementById("colomDua").value);
+        //variable operasi aritmatik
+        var op = document.getElementById("op").value;
+        //variable angka hasil
+        var hasil = document.getElementById("hasil");
+        //variable untuk total angka satu dan angka dua
+        var total;
+
+        //Fungsi isNaN () menentukan apakah suatu nilai adalah angka ilegal (Bukan-a-Number).
+
+        if (isNaN(angkaSatu) || isNaN(angkaDua)) {
+            alert('isi form dengan angka!')
+        } else {
+            if (op == "+") {
+                total = angkaSatu + angkaDua;
+            }
+            else if (op == "-") {
+                total = angkaSatu - angkaDua;
+            }
+            else if (op == "x") {
+                total = angkaSatu * angkaDua;
+            }
+            else {
+                total = angkaSatu / angkaDua;
+            }
+        }
+        hasil.value = total;
+    }
+</script>
+
+<script>
+    var coll = document.getElementsByClassName("collapse");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+</html>

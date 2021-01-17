@@ -1,0 +1,83 @@
+
+/*Body*/
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+/* Style the list */
+  ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    /* background-color: #eee; */
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/*-------------------------------------*/
+/* kelas medsos */
+ul.medsos {
+    padding: 10px 16px;
+    list-style: none;
+    /* background-color: #eee; */
+}
+
+/* Display list items side by side */
+ul.medsos li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.medsos li+li:before {
+    margin-right: 25px;
+    /* color: black; */
+    content: "\00a0";
+}
+
+
+/* Add a color on mouse-over */
+/* ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+} */
+
+/* kelas footer*/
+.detail_tag a {
+    display: inline-block;
+    background: #e5e5e5;
+    padding: 3px 12px;
+    margin: 10px 0 0;
+    color: #717171;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 100;
+    position: relative;
+}
+
+.video20detik_0{
+    border: 0px; ;text-align: left; height: 331.875px; visibility: visible
+}
